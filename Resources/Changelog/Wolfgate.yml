@@ -4759,3 +4759,18 @@ Entries:
   id: 100315
   time: '2026-11-02T02:32:52.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/431
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: NPC crew no longer fire semi-automatic guns at machine gun speed.
+    - type: Fix
+      message: Microwaves no longer swallow an emag used on them.
+    - type: Fix
+      message: >-
+        Drifting in zero gravity no longer interrupts actions on yourself or
+        things you carry.
+    - type: Tweak
+      message: You are now told when the hourly payout cap cuts your bounty.
+  id: 100316
+  time: '2026-11-02T02:55:24.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/451
