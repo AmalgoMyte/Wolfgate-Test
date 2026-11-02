@@ -4745,3 +4745,10 @@ Entries:
   id: 100313
   time: '2026-11-02T01:49:21.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/449
+- author: Gandalf2k15
+  changes:
+    - type: Remove
+      message: Removes OwO accent.........
+  id: 100314
+  time: '2026-11-02T02:02:18.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/450
