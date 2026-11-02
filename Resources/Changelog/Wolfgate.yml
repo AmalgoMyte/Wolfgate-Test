@@ -4799,3 +4799,12 @@ Entries:
   id: 100319
   time: '2026-11-02T21:45:42.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/456
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: >-
+        Leg and foot markings no longer hide under the other limb when facing
+        east or west.
+  id: 100320
+  time: '2026-11-02T22:28:18.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/461
