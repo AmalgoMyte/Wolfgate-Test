@@ -210,6 +210,78 @@ public sealed class WFGameHubTest
     }
 
     [Test]
+    public async Task NearbyGamesShareTheVolume()
+    {
+        Assert.Multiple(() =>
+        {
+            Assert.That(ClientHub.GetNoiseVolume(255, 6), Is.LessThan(ClientHub.GetNoiseVolume(255, 1)),
+                "More games at once should each be quieter.");
+            Assert.That(ClientHub.GetNoiseVolume(255, 0), Is.EqualTo(ClientHub.GetNoiseVolume(255, 1)));
+        });
+
+        await Task.CompletedTask;
+    }
+
+    [Test]
+    public async Task ARowOfCabinetsStaysWithinTheLimits()
+    {
+        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true, Dirty = true });
+        var server = pair.Server;
+        var client = pair.Client;
+        var map = await pair.CreateTestMap();
+
+        EntityUid far = default, near = default;
+
+        await server.WaitPost(() =>
+        {
+            var player = server.EntMan.SpawnEntity("MobHuman", map.GridCoords);
+            server.PlayerMan.SetAttachedEntity(server.PlayerMan.Sessions.Single(), player);
+
+            far = server.EntMan.SpawnEntity(Cabinet, map.GridCoords.Offset(new System.Numerics.Vector2(8, 0)));
+            near = server.EntMan.SpawnEntity(Cabinet, map.GridCoords.Offset(new System.Numerics.Vector2(1, 0)));
+
+            foreach (var cabinet in new[] { far, near })
+            {
+                var broadcast = server.EntMan.EnsureComponent<WFGameBroadcastComponent>(cabinet);
+                broadcast.Game = Game;
+                broadcast.Track = "D_E1M1";
+                broadcast.Loop = true;
+            }
+        });
+
+        await pair.RunTicksSync(10);
+
+        var hub = client.System<ClientHub>();
+        var clientNear = client.EntMan.GetEntity(server.EntMan.GetNetEntity(near));
+        var clientFar = client.EntMan.GetEntity(server.EntMan.GetNetEntity(far));
+
+        await RunUntil(pair, () => hub.NearbyTrackSource == clientNear, 300);
+
+        await client.WaitAssertion(() =>
+        {
+            Assert.That(hub.NearbyTrackSource, Is.EqualTo(clientNear), "The nearest game's music should play.");
+            Assert.That(hub.NearbyTrackCount, Is.EqualTo(1), "Only one game's music should play.");
+
+            var played = 0;
+            for (var i = 0; i < ClientHub.MaxNearbyNoises * 2; i++)
+            {
+                if (hub.PlayNearbyNoise(clientNear, Game, "DSPISTOL", 200))
+                    played++;
+            }
+
+            Assert.That(played, Is.InRange(1, ClientHub.MaxNearbyNoises), "Nearby sounds should stop at the cap.");
+            Assert.That(hub.PlayNearbyNoise(clientNear, Game, "DSPISTOL", 200), Is.False, "A full pool refuses new sounds.");
+        });
+
+        // The near game ending hands the music to the other one.
+        await server.WaitPost(() => server.EntMan.RemoveComponent<WFGameBroadcastComponent>(near));
+        await RunUntil(pair, () => hub.NearbyTrackSource == clientFar, 300);
+        Assert.That(hub.NearbyTrackSource, Is.EqualTo(clientFar), "Music should move to the game still playing.");
+
+        await pair.CleanReturnAsync();
+    }
+
+    [Test]
     public async Task PdasGetTheGamehub()
     {
         await using var pair = await PoolManager.GetServerClient();
