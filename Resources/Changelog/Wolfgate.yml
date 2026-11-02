@@ -4725,3 +4725,14 @@ Entries:
   id: 100311
   time: '2026-11-02T00:54:43.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/436
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: Radars now show the coordinates of your cursor and the scanner.
+    - type: Add
+      message: Helms and mass scanners can save, name and delete ship waypoints.
+    - type: Add
+      message: Helms can send the autopilot to typed coordinates or a saved waypoint.
+  id: 100312
+  time: '2026-11-02T01:43:40.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/448
