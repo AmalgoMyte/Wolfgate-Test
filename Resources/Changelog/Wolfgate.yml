@@ -4818,3 +4818,18 @@ Entries:
   id: 100321
   time: '2026-11-02T22:28:37.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/458
+- author: Happyowl93
+  changes:
+    - type: Add
+      message: >-
+        Added the ARACHNE hacking harpoon, a ship gun that fires a dart on a 250
+        m cable. A hit disables the target's FTL, then parks it and stops its
+        guns firing on you, but your own ship guns stay locked until the cable
+        is gone.  Made available to PDV, VG and Underground Market
+    - type: Tweak
+      message: New sprites for the tow harpoon, its turret and its cable.
+    - type: Tweak
+      message: Cables now draw as smooth curves and fold less when slack.
+  id: 100322
+  time: '2026-11-02T23:35:38.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/460
