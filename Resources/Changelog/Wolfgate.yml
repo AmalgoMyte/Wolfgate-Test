@@ -4752,3 +4752,10 @@ Entries:
   id: 100314
   time: '2026-11-02T02:02:18.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/450
+- author: TheSlapper
+  changes:
+    - type: Add
+      message: Added voices for characters.
+  id: 100315
+  time: '2026-11-02T02:32:52.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/431
