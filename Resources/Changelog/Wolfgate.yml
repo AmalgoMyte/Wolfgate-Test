@@ -4808,3 +4808,13 @@ Entries:
   id: 100320
   time: '2026-11-02T22:28:18.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/461
+- author: Balls2zawall
+  changes:
+    - type: Tweak
+      message: >-
+        Changed the configuration of the Shiv's ore magnet and ore processor,
+        and increased the size of the blast doors to make the whole thing more
+        accessible to use.
+  id: 100321
+  time: '2026-11-02T22:28:37.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/458
