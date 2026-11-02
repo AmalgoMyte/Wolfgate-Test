@@ -4792,3 +4792,10 @@ Entries:
   id: 100318
   time: '2026-11-02T09:48:52.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/455
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: The test suite runs three times faster on developer machines.
+  id: 100319
+  time: '2026-11-02T21:45:42.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/456
