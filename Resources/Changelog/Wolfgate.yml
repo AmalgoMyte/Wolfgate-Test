@@ -4849,3 +4849,38 @@ Entries:
   id: 100324
   time: '2026-11-03T00:45:47.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/463
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: >-
+        Artifacts that turn invisible can still be examined, so close inspection
+        nodes can be finished.
+    - type: Fix
+      message: >-
+        The medical recipes guidebook page lists the medical assembler's recipes
+        again.
+    - type: Fix
+      message: The Dredger's station records computer faces the cockpit.
+    - type: Fix
+      message: >-
+        Ghost roles no longer draw company pay, company radio or company cuts
+        from your character.
+    - type: Fix
+      message: Mining laser power buttons stay in place when an asteroid is scanned.
+    - type: Fix
+      message: Ghosts can hear company and crew radio.
+    - type: Fix
+      message: Waypoints stay with every piece of a ship that splits.
+    - type: Fix
+      message: Slimes hunt monkeys and other passive mobs.
+    - type: Fix
+      message: Slimes always split into at least two.
+    - type: Tweak
+      message: >-
+        Smuggling money reaches the Ashfall Reavers at most once every 20
+        minutes.
+    - type: Fix
+      message: A flare that was already fired leaves the flare gun when fired again.
+  id: 100325
+  time: '2026-11-03T01:55:12.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/465
