@@ -4903,3 +4903,16 @@ Entries:
   id: 100326
   time: '2026-11-03T01:55:26.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/466
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: Ships holding a hostage show it on the mass scanner.
+    - type: Add
+      message: >-
+        Pay an abductor's ransom over a hail, then dock and collect the
+        prisoner.
+    - type: Tweak
+      message: Judges no longer fire on ships with players aboard or docked to them.
+  id: 100327
+  time: '2026-11-03T02:29:35.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/454
