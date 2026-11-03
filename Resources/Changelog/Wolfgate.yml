@@ -4884,3 +4884,22 @@ Entries:
   id: 100325
   time: '2026-11-03T01:55:12.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/465
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: Selling a ship no longer freezes the server.
+    - type: Fix
+      message: >-
+        Sold ships no longer lose their storage, device links or toggleable
+        clothing when copied for the used lot.
+    - type: Fix
+      message: >-
+        Salvage expeditions no longer fail to generate when their cables can't
+        all connect.
+    - type: Fix
+      message: >-
+        Admins can run Toolshed commands like entities and nearby without the >
+        prefix.
+  id: 100326
+  time: '2026-11-03T01:55:26.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/466
