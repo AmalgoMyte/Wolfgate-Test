@@ -5556,3 +5556,22 @@ Entries:
   id: 100345
   time: '2026-11-04T21:27:07.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/485
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Added nuclear warheads in four sizes with timer, two-key, remote and
+        dead-man switch arming.
+    - type: Add
+      message: >-
+        Nuclear detonations now flash, send out a shockwave, leave a fireball or
+        mushroom cloud and spread radioactive fallout.
+    - type: Tweak
+      message: >-
+        The station nuke uses new sprites, a floating countdown and a voiced
+        final countdown.
+    - type: Add
+      message: Admins can design and spawn custom nukes with the nuke designer.
+  id: 100346
+  time: '2026-11-04T22:07:49.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/484
