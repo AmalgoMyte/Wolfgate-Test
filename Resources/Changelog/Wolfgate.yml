@@ -5491,3 +5491,12 @@ Entries:
   id: 100338
   time: '2026-11-04T04:50:30.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/478
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Admins can ask players who own a ship and are in space whether they want
+        to be tested on. No refunds or compensation will be given.
+  id: 100339
+  time: '2026-11-04T04:50:42.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/476
