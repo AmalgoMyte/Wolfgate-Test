@@ -5004,3 +5004,31 @@ Entries:
   id: 100332
   time: '2026-11-04T01:25:03.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/473
+- author: Happyowl93
+  changes:
+    - type: Add
+      message: >-
+        The mothership core can print wizden's xenoborg upgrade modules:
+        construction, deflector field, tile gun, nanite gun, oil gun, zap,
+        laser, burst laser, guided missiles, rockets, radioactive aura, jump,
+        knife, energy dagger, bio knife and space movement.
+    - type: Add
+      message: >-
+        Xenoborgs can build an extractor that grows xenoborg crystals from their
+        ship's power. Shells and weapon modules cost crystals; utility modules
+        cost materials.
+    - type: Add
+      message: >-
+        The mothership core can watch through its xenoborgs' cameras from
+        anywhere.
+    - type: Tweak
+      message: >-
+        Xenoborg floors and walls have a new blue look, with neon bands on the
+        walls.
+    - type: Tweak
+      message: >-
+        Xenoborgs resist EMPs, and heavy and scout xenoborgs are immune to
+        flashes.
+  id: 100333
+  time: '2026-11-04T02:09:34.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/471
