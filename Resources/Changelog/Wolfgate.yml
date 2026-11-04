@@ -5633,3 +5633,12 @@ Entries:
   id: 100350
   time: '2026-11-04T22:58:56.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/492
+- author: Balls2zawall
+  changes:
+    - type: Fix
+      message: Fixed some missing atmos markers on Zvezda
+    - type: Fix
+      message: Changed some misplaced passive vents on new CC areas to scrubbers
+  id: 100351
+  time: '2026-11-04T23:10:05.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/495
