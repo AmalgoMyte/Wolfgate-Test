@@ -5456,3 +5456,10 @@ Entries:
   id: 100335
   time: '2026-11-04T02:26:11.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/474
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: Cargo weight tests match the free cargo allowance.
+  id: 100336
+  time: '2026-11-04T03:20:55.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/475
