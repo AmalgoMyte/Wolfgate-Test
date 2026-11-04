@@ -5586,3 +5586,26 @@ Entries:
   id: 100347
   time: '2026-11-04T22:09:46.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/493
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        NPC ships now talk based on how the fight is going, and a badly hurt
+        ship no longer demands your cargo.
+    - type: Tweak
+      message: >-
+        NPC ships warn you once, then a final time, then go quiet instead of
+        repeating themselves.
+    - type: Tweak
+      message: >-
+        NPC ships remember if you ran, came back, or shot first, and bring it
+        up.
+    - type: Tweak
+      message: Badly hurt NPC ships stop picking fights and may run.
+    - type: Add
+      message: >-
+        Beaten NPC ships may rarely surrender. Accept over the hail and their
+        crew stand down. Fire on a white flag and they fight to the end.
+  id: 100348
+  time: '2026-11-04T22:50:27.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/494
