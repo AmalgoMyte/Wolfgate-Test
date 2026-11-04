@@ -5482,3 +5482,12 @@ Entries:
   id: 100337
   time: '2026-11-04T04:35:32.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/477
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        Any ship carrying an expedition console now has all of its thrusters
+        converted for landing, including ones built later.
+  id: 100338
+  time: '2026-11-04T04:50:30.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/478
