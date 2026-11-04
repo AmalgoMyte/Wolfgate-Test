@@ -4995,3 +4995,12 @@ Entries:
   id: 100331
   time: '2026-11-03T11:15:20.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/457
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Admins have a new RP Announce window with custom sounds, colours,
+        headings and an on-screen notification chip.
+  id: 100332
+  time: '2026-11-04T01:25:03.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/473
