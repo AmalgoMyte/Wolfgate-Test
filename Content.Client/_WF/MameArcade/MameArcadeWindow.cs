@@ -543,8 +543,8 @@ public sealed partial class MameArcadeWindow : DefaultWindow
         // Keeps the remainder, so frames that land just short of the interval don't slip to every other one.
         _sinceVideo = MathF.Min(_sinceVideo - interval, interval);
         _encodingKeyframe = keyframe;
-        var frame = (Rgba32[]) pixels.Clone();
         var (width, height, encoder, deck, stamp) = (_session!.Width, _session.Height, _encoder, DeckForWatchers(), Now());
+        var frame = encoder.Stage(pixels);
         _encoding = Task.Run(() => encoder.Encode(frame, width, height, keyframe, deck, stamp));
     }
 

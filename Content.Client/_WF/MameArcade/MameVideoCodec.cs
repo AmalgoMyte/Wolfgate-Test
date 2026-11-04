@@ -61,6 +61,25 @@ public sealed class MameVideoEncoder
     private int _width;
     private int _height;
 
+    // Kept between frames: at these sizes each one would otherwise land on the large object heap.
+    private Rgba32[] _staging = Array.Empty<Rgba32>();
+    private byte[] _mask = Array.Empty<byte>();
+    private readonly MemoryStream _body = new();
+    private readonly MemoryStream _packet = new();
+
+    /// <summary>
+    /// Copies a frame into a buffer this encoder owns, to hand to <see cref="Encode"/> on another thread. Reused, so
+    /// don't stage another frame until that encode is done.
+    /// </summary>
+    public Rgba32[] Stage(Rgba32[] pixels)
+    {
+        if (_staging.Length != pixels.Length)
+            _staging = new Rgba32[pixels.Length];
+
+        Array.Copy(pixels, _staging, pixels.Length);
+        return _staging;
+    }
+
     /// <param name="stamp">When the frame was taken, in milliseconds of this client's clock.</param>
     public byte[] Encode(Rgba32[] pixels, int width, int height, bool keyframe, MameDeckState deck = default, uint stamp = 0)
     {
@@ -79,8 +98,15 @@ public sealed class MameVideoEncoder
         }
 
         var tilesX = MameVideoCodec.TilesAcross(width);
-        var mask = new byte[(MameVideoCodec.TileCount(width, height) + 7) / 8];
-        var body = new MemoryStream();
+        var maskLength = (MameVideoCodec.TileCount(width, height) + 7) / 8;
+        if (_mask.Length != maskLength)
+            _mask = new byte[maskLength];
+        else
+            Array.Clear(_mask);
+
+        var mask = _mask;
+        var body = _body;
+        body.SetLength(0);
 
         for (var ty = 0; ty < MameVideoCodec.TilesAcross(height); ty++)
         {
@@ -103,7 +129,8 @@ public sealed class MameVideoEncoder
         if (deck.TwoActive)
             flags |= MameVideoCodec.TwoActiveFlag;
 
-        var packet = new MemoryStream();
+        var packet = _packet;
+        packet.SetLength(0);
         packet.WriteByte(flags);
         WriteUShort(packet, (ushort) width);
         WriteUShort(packet, (ushort) height);
@@ -160,6 +187,9 @@ public sealed class MameVideoDecoder
 
     private Rgba32[] _frame = Array.Empty<Rgba32>();
 
+    // Reused between packets, as it's as big as a keyframe.
+    private byte[] _body = Array.Empty<byte>();
+
     public int Width { get; private set; }
     public int Height { get; private set; }
 
@@ -201,7 +231,11 @@ public sealed class MameVideoDecoder
         var maskBytes = (tiles + 7) / 8;
 
         // Never more than a keyframe holds.
-        var body = new byte[maskBytes + width * height * 2];
+        var bodyLength = maskBytes + width * height * 2;
+        if (_body.Length != bodyLength)
+            _body = new byte[bodyLength];
+
+        var body = _body;
         int length;
         try
         {
