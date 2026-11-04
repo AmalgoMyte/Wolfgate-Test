@@ -5500,3 +5500,10 @@ Entries:
   id: 100339
   time: '2026-11-04T04:50:42.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/476
+- author: DriftingSkies
+  changes:
+    - type: Add
+      message: Sol Common to TSF Contractors by default. (Again.)
+  id: 100340
+  time: '2026-11-04T08:37:27.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/482
