@@ -5642,3 +5642,10 @@ Entries:
   id: 100351
   time: '2026-11-04T23:10:05.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/495
+- author: Sushiburger
+  changes:
+    - type: Add
+      message: Vulpkanin and Feroxi helmets for maxim (experimental salvage) suits
+  id: 100352
+  time: '2026-11-04T23:19:13.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/496
