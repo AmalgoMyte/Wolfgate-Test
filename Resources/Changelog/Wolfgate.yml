@@ -5575,3 +5575,14 @@ Entries:
   id: 100346
   time: '2026-11-04T22:07:49.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/484
+- author: Happyowl93
+  changes:
+    - type: Add
+      message: >-
+        MMC Hokkaido and Anvilhold Drydock now have cargo turn-in chutes for
+        trade crates.
+    - type: Add
+      message: TSFMC Halcyon and Zvezda now have trade-goods vendors.
+  id: 100347
+  time: '2026-11-04T22:09:46.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/493
