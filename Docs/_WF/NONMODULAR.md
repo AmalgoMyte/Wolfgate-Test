@@ -22,6 +22,7 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
   - the assembler's recipes
   - the medical assembler is a lathe now, so show its lathe recipe
 - [`Content.Client/_RMC14/Weapons/Ranged/Prediction/GunPredictionSystem.cs`](../../Content.Client/_RMC14/Weapons/Ranged/Prediction/GunPredictionSystem.cs): restore the licence header removed by Kill Spdx
+- [`Content.Client/Atmos/EntitySystems/FireVisualizerSystem.cs`](../../Content.Client/Atmos/EntitySystems/FireVisualizerSystem.cs): a mob that arrives burning would get its light child before it is initialised itself; the appearance update queued at startup lays it.
 - [`Content.Client/CharacterInfo/CharacterInfoSystem.cs`](../../Content.Client/CharacterInfo/CharacterInfoSystem.cs)
   - replays skip the character info request
   - Replay spectators have a local entity but no server to answer this request.
@@ -40,6 +41,7 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
   - post-shader flags are set through SpriteSystem since engine 291
   - wizden#38042
   - engine 291 ignores the sprite-wide RaiseShaderEvent; it is per post-shader now
+- [`Content.Client/Light/EntitySystems/SunShadowSystem.cs`](../../Content.Client/Light/EntitySystems/SunShadowSystem.cs): at round start the time can be negative or sit exactly on the first entry, which fell through to the throw; wrap it into the last span instead.
 - [`Content.Client/Lobby/LobbyUIController.cs`](../../Content.Client/Lobby/LobbyUIController.cs): unknown species falls back to the default
 - [`Content.Client/Lobby/UI/CharacterSetupGui.xaml.cs`](../../Content.Client/Lobby/UI/CharacterSetupGui.xaml.cs)
   - logs characters that can't be previewed
@@ -361,11 +363,15 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
 - [`Resources/Locale/en-US/_Mono/prototypes/access/accesses.ftl`](../../Resources/Locale/en-US/_Mono/prototypes/access/accesses.ftl): Monolith#4816 shipped the Underground access levels without names
 - [`Resources/Locale/en-US/_Mono/store/pdv-uplink-catalog.ftl`](../../Resources/Locale/en-US/_Mono/store/pdv-uplink-catalog.ftl): the uplink had no 5.56 for the Vympel it sells
 - [`Resources/Maps/_Mono/Bluespace/prefracture.yml`](../../Resources/Maps/_Mono/Bluespace/prefracture.yml): Hardpoints mapped under the Unidentified Vessel's Scythe, Sunder and Flayer guns so gunnery links them.
+- [`Resources/Maps/_Mono/Crocus/jianghui_industrial_0.yml`](../../Resources/Maps/_Mono/Crocus/jianghui_industrial_0.yml): Removed every chasm.
+- [`Resources/Maps/_Mono/Crocus/jianghui_industrial_1.yml`](../../Resources/Maps/_Mono/Crocus/jianghui_industrial_1.yml): Removed every chasm.
 - [`Resources/Maps/_Mono/Monolithic/monolithicasteroidsmallship.yml`](../../Resources/Maps/_Mono/Monolithic/monolithicasteroidsmallship.yml): Hardpoint mapped under the asteroid ship's AK570 so gunnery links it.
 - [`Resources/Maps/_Mono/Outpost/caelestinus_central.yml`](../../Resources/Maps/_Mono/Outpost/caelestinus_central.yml): Sector map entity gets its Parallax component and Colossus Sector name back after the
 - [`Resources/Maps/_Mono/POI/Dungeons/zvezda.yml`](../../Resources/Maps/_Mono/POI/Dungeons/zvezda.yml): Zvezda lighting re-work and power generation.
 - [`Resources/Maps/_Mono/POI/pdvhelios.yml`](../../Resources/Maps/_Mono/POI/pdvhelios.yml): Helios mapping fixes for lighting, wallmounts and small layout tweaks.
 - [`Resources/Maps/_Mono/POI/tsfmc_industry.yml`](../../Resources/Maps/_Mono/POI/tsfmc_industry.yml): Stellar Blessing lighting, colour-coded distro, fire suit lockers and extinguishers.
+- [`Resources/Maps/Dungeon/haunted.yml`](../../Resources/Maps/Dungeon/haunted.yml): Removed every chasm.
+- [`Resources/Maps/Dungeon/mineshaft.yml`](../../Resources/Maps/Dungeon/mineshaft.yml): Removed every chasm.
 - [`Resources/migration.yml`](../../Resources/migration.yml): Monolith#4816 renamed the WL-01 suit and helmet without a migration
 - [`Resources/Prototypes/_DV/Catalog/Jukebox/Standard.yml`](../../Resources/Prototypes/_DV/Catalog/Jukebox/Standard.yml): licence does not cover this fork, track removed
 - [`Resources/Prototypes/_DV/Entities/Objects/Weapons/Guns/Projectiles/muzzleflashes.yml`](../../Resources/Prototypes/_DV/Entities/Objects/Weapons/Guns/Projectiles/muzzleflashes.yml): restore the licence header removed by Kill Spdx
