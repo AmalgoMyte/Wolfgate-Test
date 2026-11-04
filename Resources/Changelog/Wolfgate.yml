@@ -5534,3 +5534,16 @@ Entries:
   id: 100343
   time: '2026-11-04T09:52:47.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/487
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        The sector now has a DEFCON level from 5 to 1 that rises and falls with
+        the threat, announced with an alarm and shown on your PDA.
+    - type: Add
+      message: >-
+        Admins can set, lock and bias the sector DEFCON from a new panel on the
+        Wolfgate admin tab.
+  id: 100344
+  time: '2026-11-04T21:10:27.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/483
