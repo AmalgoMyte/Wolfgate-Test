@@ -5421,3 +5421,38 @@ Entries:
   id: 100334
   time: '2026-11-04T02:25:00.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/231
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: Searching uplinks and the UndergroundVend works again.
+    - type: Fix
+      message: >-
+        The chameleon backpack and deathsquad glasses list their disguises
+        again.
+    - type: Fix
+      message: A dead ghost role mob is no longer offered as a ghost role.
+    - type: Fix
+      message: Resomi can speak and understand Scratch.
+    - type: Fix
+      message: The MMC smart gun research also unlocks the Sakura's magazine.
+    - type: Tweak
+      message: Ships carry a small amount of cargo before it costs thrust.
+    - type: Tweak
+      message: The CBURN exosuit blocks as much radiation as a radiation suit.
+    - type: Tweak
+      message: >-
+        Fission and fusion fuel crates warn that stacking them sets off a chain
+        explosion.
+    - type: Tweak
+      message: >-
+        The PDV Eris and Vulture carry the new mining lasers, and the Eris
+        salvage locker is filled.
+    - type: Add
+      message: IPCs can have anatomy.
+    - type: Tweak
+      message: >-
+        Ships flown by a new player now show the (L) tag, not just ships they
+        own.
+  id: 100335
+  time: '2026-11-04T02:26:11.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/474
