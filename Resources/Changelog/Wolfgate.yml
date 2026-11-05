@@ -5717,3 +5717,22 @@ Entries:
   id: 100358
   time: '2026-11-05T21:36:08.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/505
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        Synthetics can be turned by chimera Letoferol; it shorts their wiring
+        while flesh grows over the frame.
+    - type: Tweak
+      message: >-
+        An unsuited synthetic in space freezes and goes down after a short
+        while, but never passes out.
+    - type: Tweak
+      message: >-
+        A synthetic drained of hydraulic fluid starves its core and dies if it
+        isn't refilled.
+    - type: Fix
+      message: Native Synths can now be turned by natural Letoferol like other species.
+  id: 100359
+  time: '2026-11-05T22:20:17.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/499
