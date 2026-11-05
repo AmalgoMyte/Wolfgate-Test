@@ -5736,3 +5736,12 @@ Entries:
   id: 100359
   time: '2026-11-05T22:20:17.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/499
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        The server spends less time on snow slowdown and body temperature
+        checks.
+  id: 100360
+  time: '2026-11-05T23:50:56.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/509
