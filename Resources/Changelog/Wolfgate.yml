@@ -5649,3 +5649,10 @@ Entries:
   id: 100352
   time: '2026-11-04T23:19:13.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/496
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: Magboots no longer spam errors when put on a character preview.
+  id: 100353
+  time: '2026-11-05T02:03:37.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/498
