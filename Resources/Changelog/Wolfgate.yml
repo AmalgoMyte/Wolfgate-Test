@@ -5861,3 +5861,23 @@ Entries:
   id: 100361
   time: '2026-11-05T23:52:42.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/481
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Added the Lore Book, a book of the sector's history, factions, worlds
+        and threats. Open it from the top bar, the game menu or the lobby.
+    - type: Add
+      message: Objects with a lore entry have a Lore button when examined.
+    - type: Add
+      message: >-
+        New lore pages on the Collapse of Kyphrus, Carcinoma, Crocus, the
+        Ashfall Reavers, the ADS, the judges, the Monolith, Chimera and
+        xenonids.
+    - type: Tweak
+      message: >-
+        Lore pages moved out of the guidebook into the Lore Book; guide pages
+        link to them.
+  id: 100362
+  time: '2026-11-05T23:56:30.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/510
