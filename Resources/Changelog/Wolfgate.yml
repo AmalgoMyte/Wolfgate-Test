@@ -5656,3 +5656,10 @@ Entries:
   id: 100353
   time: '2026-11-05T02:03:37.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/498
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: Local test runs no longer lock up the computer when several run at once.
+  id: 100354
+  time: '2026-11-05T02:04:26.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/497
