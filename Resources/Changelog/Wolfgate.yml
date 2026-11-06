@@ -6053,3 +6053,48 @@ Entries:
   id: 100372
   time: '2026-11-06T20:27:49.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/519
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Space now changes colour as you leave the Lattice's hold, and the Coda
+        is nearly black, full of veins and things that look back.
+    - type: Tweak
+      message: >-
+        The bands are now Unison, Detune, Dissonance, Feedback and the Coda, and
+        they reach much further out.
+    - type: Add
+      message: >-
+        FTL drives don't work in Feedback or the Coda, and you can't jump into
+        them.
+    - type: Add
+      message: >-
+        High Drift can hit you with a pulse: your vision narrows and throbs with
+        glyphs and bass for a few seconds.
+    - type: Add
+      message: Destroyed Lattice anchors show as DEAD ANCHOR with grey IFF on radar.
+    - type: Add
+      message: >-
+        Bodies left in the Coda rise as Remade. If it was yours, you can choose
+        to rise with it.
+    - type: Tweak
+      message: >-
+        Answering the Choir is a coin toss: half join, half die and rise as
+        Remade. Choir members can't be revived and turn when they die.
+    - type: Add
+      message: >-
+        Ghosts and admins see a red C over Choir members, and their PDAs carry
+        red glyphs.
+    - type: Add
+      message: >-
+        Surgeons can cut the song out of a Choir member with a shard of exotic
+        matter, at a risk.
+    - type: Tweak
+      message: Relay anchors now burn exotic matter to keep holding.
+    - type: Add
+      message: >-
+        Ships that linger in the Coda get boarded by Remade hunters, rot without
+        a stabiliser, have systems cut out, and lose patches of radar.
+  id: 100373
+  time: '2026-11-06T22:30:49.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/523
