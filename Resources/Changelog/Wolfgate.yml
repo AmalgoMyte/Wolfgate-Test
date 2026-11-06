@@ -5948,3 +5948,12 @@ Entries:
   id: 100365
   time: '2026-11-06T06:02:47.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/470
+- author: Toriate
+  changes:
+    - type: Add
+      message: SRD and its ammo gets a new sprite.
+    - type: Fix
+      message: Removed the old soulful RCD sprite from under the RCD sprite.
+  id: 100366
+  time: '2026-11-06T06:06:51.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/507
