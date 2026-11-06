@@ -5931,3 +5931,20 @@ Entries:
   id: 100364
   time: '2026-11-06T05:30:03.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/513
+- author: Happyowl93
+  changes:
+    - type: Remove
+      message: >-
+        PDV ships no longer come with adamantite walls and are back on
+        plastitanium.
+    - type: Tweak
+      message: >-
+        Adamantite walls are now durasteel walls, with five thirds the health of
+        the plastitanium wall they replace and the same resistances.
+    - type: Add
+      message: >-
+        Drydocks offer durasteel plating, which swaps every plastitanium wall on
+        your ship for durasteel
+  id: 100365
+  time: '2026-11-06T06:02:47.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/470
