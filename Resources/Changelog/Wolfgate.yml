@@ -6027,3 +6027,20 @@ Entries:
   id: 100370
   time: '2026-11-06T15:55:04.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/518
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        Reaver and ADS bounties pay a lot more, and grow with every ship that
+        joins the fight.
+    - type: Tweak
+      message: >-
+        ADS bounties grow with the server population and give drydock repair
+        vouchers, like the Reavers.
+    - type: Tweak
+      message: >-
+        The Reaver citadel and ADS dreadnought bounties are no longer cut by the
+        hourly payout cap.
+  id: 100371
+  time: '2026-11-06T20:02:35.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/520
