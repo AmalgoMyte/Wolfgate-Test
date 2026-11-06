@@ -5888,3 +5888,46 @@ Entries:
   id: 100363
   time: '2026-11-06T04:38:49.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/514
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: >-
+        Dead crew's headsets only plead for help where a Monolith is stirring or
+        the Remade are about.
+    - type: Fix
+      message: >-
+        The Numb trait hides the damage vignette and keeps the health doll at
+        full.
+    - type: Fix
+      message: >-
+        The anomaly scanner no longer runs points earned onto the point output
+        line.
+    - type: Fix
+      message: The plasma cutter is no longer giant when held or worn on a belt.
+    - type: Fix
+      message: >-
+        Sealed mercenary and Volta modsuits no longer turn Resomi into an error
+        sprite, and sealed standard modsuits no longer do it to Vox.
+    - type: Fix
+      message: Anvilhold and the chop-shop can't be broken by a drydock.
+    - type: Fix
+      message: Ships no longer pick up nuclear fallout in open space.
+    - type: Tweak
+      message: Nukes erase everything at ground zero, floor and paint included.
+    - type: Tweak
+      message: Nuclear fallout is now deadly and lasts much longer.
+    - type: Fix
+      message: >-
+        A battle's winner keeps its warning and attack rings on radar while it
+        still guards them.
+    - type: Fix
+      message: Admins possessing birds and NPCs no longer fight their AI.
+    - type: Fix
+      message: >-
+        The MLA-73, M90, Bulldog, Hristov and Bandit tech disks unlock their
+        guns.
+    - type: Fix
+      message: Bounty contracts try harder to find a place for their target.
+  id: 100364
+  time: '2026-11-06T05:30:03.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/513
