@@ -5957,3 +5957,28 @@ Entries:
   id: 100366
   time: '2026-11-06T06:06:51.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/507
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Reality anchors now hold the sector together. Fly past them and the
+        Unmooring sets in: Drift builds up, you start seeing and hearing things,
+        and the far bands are marked as restricted, unsafe space.
+    - type: Add
+      message: >-
+        The outer bands pay out more ore, and exotic matter, which sells high
+        and builds Drift stabilisers, anchor charms and relay anchors.
+    - type: Add
+      message: >-
+        The six Lattice anchors are shielded stations with drones guarding them.
+        Destroying one is a sector-wide breach that shrinks anchored space and
+        makes Kyphrus look wrong.
+    - type: Add
+      message: >-
+        Players deep in Drift may be offered the Choir, an opt-in antagonist
+        faction.
+    - type: Tweak
+      message: Monolith ships only turn up in the Deep, past 30 km.
+  id: 100367
+  time: '2026-11-06T09:48:06.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/508
