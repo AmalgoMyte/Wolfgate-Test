@@ -6044,3 +6044,12 @@ Entries:
   id: 100371
   time: '2026-11-06T20:02:35.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/520
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Examining a wall, window, door or other structure now shows its
+        integrity, like 490/500.
+  id: 100372
+  time: '2026-11-06T20:27:49.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/519
