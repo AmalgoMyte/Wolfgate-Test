@@ -7492,3 +7492,10 @@ Entries:
   id: 100469
   time: '2026-11-14T18:19:35.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/662
+- author: Balls2zawall
+  changes:
+    - type: Fix
+      message: Fixed Anvilhold's docking arms missing power
+  id: 100470
+  time: '2026-11-14T18:21:27.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/663
