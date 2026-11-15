@@ -7549,3 +7549,19 @@ Entries:
   id: 100474
   time: '2026-11-15T08:58:08.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/668
+- author: DriftingSkies
+  changes:
+    - type: Add
+      message: >-
+        Combat Music tab in the character editor. Build a playlist from 37
+        tracks, preview each one, and your character shuffles through them in
+        combat.
+    - type: Add
+      message: 31 new combat tracks.
+    - type: Tweak
+      message: >-
+        Faction combat music now keeps playing track after track while combat
+        mode is on, instead of stopping after one.
+  id: 100475
+  time: '2026-11-15T09:00:04.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/660
