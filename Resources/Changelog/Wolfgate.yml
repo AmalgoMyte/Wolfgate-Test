@@ -7506,3 +7506,10 @@ Entries:
   id: 100471
   time: '2026-11-15T07:59:46.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/669
+- author: Sushiburger
+  changes:
+    - type: Tweak
+      message: Made reality anchor hum quieter.
+  id: 100472
+  time: '2026-11-15T08:01:00.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/666
