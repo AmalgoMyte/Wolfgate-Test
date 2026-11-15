@@ -7601,3 +7601,13 @@ Entries:
   id: 100478
   time: '2026-11-15T11:47:28.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/672
+- author: Happyowl93
+  changes:
+    - type: Add
+      message: >-
+        Adamantine slime extracts injected with blood now grow a slime heart, a
+        living ship fitting that slowly repairs its hull while fed adamantine
+        extracts.
+  id: 100479
+  time: '2026-11-15T13:54:20.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/677
