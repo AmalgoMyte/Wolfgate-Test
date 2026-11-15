@@ -7565,3 +7565,16 @@ Entries:
   id: 100475
   time: '2026-11-15T09:00:04.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/660
+- author: Happyowl93
+  changes:
+    - type: Tweak
+      message: >-
+        Ship shields, bluespace drives and mobile drydock cranes and consoles
+        now bond to the first hull they are bolted to. They can be moved around
+        their own ship but will not bolt down on another; examine one to see its
+        ship.
+    - type: Remove
+      message: Mobile drydock boards can no longer be researched or printed.
+  id: 100476
+  time: '2026-11-15T09:09:18.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/664
