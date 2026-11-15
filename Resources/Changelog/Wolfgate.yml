@@ -7662,3 +7662,16 @@ Entries:
   id: 100483
   time: '2026-11-15T19:12:41.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/683
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        The cockpit hides its shield controls on ships without a shield
+        generator, and chat uses the freed space.
+    - type: Tweak
+      message: Space drag now only affects you once you're 4m away from a grid.
+    - type: Tweak
+      message: Radar blips now stack elegantly like encounter blips.
+  id: 100484
+  time: '2026-11-15T19:37:46.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/678
