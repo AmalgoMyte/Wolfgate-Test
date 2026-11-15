@@ -7499,3 +7499,10 @@ Entries:
   id: 100470
   time: '2026-11-14T18:21:27.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/663
+- author: Rayforx
+  changes:
+    - type: Add
+      message: barbed add-on.
+  id: 100471
+  time: '2026-11-15T07:59:46.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/669
