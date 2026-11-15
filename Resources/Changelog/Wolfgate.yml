@@ -7578,3 +7578,10 @@ Entries:
   id: 100476
   time: '2026-11-15T09:09:18.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/664
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: Fixed a server error when an encounter had no type set.
+  id: 100477
+  time: '2026-11-15T11:12:10.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/673
