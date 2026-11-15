@@ -56,6 +56,7 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
 - [`Content.Client/Lobby/UI/Roles/TraitPreferenceSelector.xaml.cs`](../../Content.Client/Lobby/UI/Roles/TraitPreferenceSelector.xaml.cs): restore the licence header removed by Kill Spdx
 - [`Content.Client/MachineLinking/UI/SignalTimerBoundUserInterface.cs`](../../Content.Client/MachineLinking/UI/SignalTimerBoundUserInterface.cs): restore the licence header removed by Kill Spdx
 - [`Content.Client/MachineLinking/UI/SignalTimerWindow.xaml.cs`](../../Content.Client/MachineLinking/UI/SignalTimerWindow.xaml.cs): restore the licence header removed by Kill Spdx
+- [`Content.Client/NightVision/NightVisionSystem.cs`](../../Content.Client/NightVision/NightVisionSystem.cs): relayed gear sits on the item, so refresh the local wearer instead
 - [`Content.Client/Parallax/ParallaxSystem.cs`](../../Content.Client/Parallax/ParallaxSystem.cs): a map without a Parallax component falls back to this name, so load it or space is black
 - [`Content.Client/Polymorph/Systems/ChameleonProjectorSystem.cs`](../../Content.Client/Polymorph/Systems/ChameleonProjectorSystem.cs): the source's hover outline came along as a post-shader with no prototype, which threw on init
 - [`Content.Client/Projectiles/ProjectileSystem.cs`](../../Content.Client/Projectiles/ProjectileSystem.cs): restore the licence header removed by Kill Spdx
@@ -250,6 +251,7 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
   - closed UIs skip updates, so refresh on open
   - refresh the state on open; the update loop skips closed UIs
   - skip closed UIs; each update re-sent the whole UI component, a large radar state on admin ghosts
+- [`Content.Server/Spawners/Components/SpawnOnDespawnComponent.cs`](../../Content.Server/Spawners/Components/SpawnOnDespawnComponent.cs): default to one spawn so prototypes without a count do not duplicate
 - [`Content.Server/Spawners/EntitySystems/SpawnPointSystem.cs`](../../Content.Server/Spawners/EntitySystems/SpawnPointSystem.cs)
   - fallback ordering
   - prefer spawners that aren't another job's, e.g. not the godfather's office for a fugitive
@@ -267,7 +269,6 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
 - [`Content.Shared/_FarHorizons/Power/Generation/FissionGenerator/ReactorPartComponent.cs`](../../Content.Shared/_FarHorizons/Power/Generation/FissionGenerator/ReactorPartComponent.cs): relabelled MIT as in HardLight b602e8d485
 - [`Content.Shared/_FarHorizons/Power/Generation/FissionGenerator/TurbineComponent.cs`](../../Content.Shared/_FarHorizons/Power/Generation/FissionGenerator/TurbineComponent.cs): relabelled MIT as in HardLight b602e8d485
 - [`Content.Shared/_FinalHorizon/Guns/AlternateGun/AlternateGunSystem.cs`](../../Content.Shared/_FinalHorizon/Guns/AlternateGun/AlternateGunSystem.cs): the client picks the gun to fire from this
-- [`Content.Shared/_Goobstation/Clothing/Systems/SharedSealableClothingSystem.cs`](../../Content.Shared/_Goobstation/Clothing/Systems/SharedSealableClothingSystem.cs): a crit or dead wearer can't work their own seals
 - [`Content.Shared/_Goobstation/Construction/ConstructedEvent.cs`](../../Content.Shared/_Goobstation/Construction/ConstructedEvent.cs): restore the licence header removed by Kill Spdx
 - [`Content.Shared/_Goobstation/DoAfter/DoAfterEndedEvent.cs`](../../Content.Shared/_Goobstation/DoAfter/DoAfterEndedEvent.cs): restore the licence header removed by Kill Spdx
 - [`Content.Shared/_Goobstation/Factory/AutomatedComponent.cs`](../../Content.Shared/_Goobstation/Factory/AutomatedComponent.cs): restore the licence header removed by Kill Spdx
@@ -346,6 +347,7 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
   - whatever the piece replaced goes back on, instead of staying shut inside the piece
   - a suit deleted along with its wearer can't take the piece back
   - another suit's piece goes back to its suit, and what it covered is kept under this one
+- [`Content.Shared/Construction/Steps/ArbitraryInsertConstructionGraphStep.cs`](../../Content.Shared/Construction/Steps/ArbitraryInsertConstructionGraphStep.cs): step names may be loc keys or plain text
 - [`Content.Shared/Damage/Systems/DamageableSystem.cs`](../../Content.Shared/Damage/Systems/DamageableSystem.cs): restore the licence header removed by Kill Spdx
 - [`Content.Shared/DisplacementMap/DisplacementData.cs`](../../Content.Shared/DisplacementMap/DisplacementData.cs): wizden#38042, the stencil one draws nothing in UI sprite views
 - [`Content.Shared/DoAfter/SharedDoAfterSystem.Update.cs`](../../Content.Shared/DoAfter/SharedDoAfterSystem.Update.cs)
@@ -361,6 +363,7 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
 - [`Content.Shared/Lightning/Components/SharedLightningComponent.cs`](../../Content.Shared/Lightning/Components/SharedLightningComponent.cs): restore the licence header removed by Kill Spdx
 - [`Content.Shared/MachineLinking/SharedSignalTimerComponent.cs`](../../Content.Shared/MachineLinking/SharedSignalTimerComponent.cs): restore the licence header removed by Kill Spdx
 - [`Content.Shared/Maps/ContentTileDefinition.cs`](../../Content.Shared/Maps/ContentTileDefinition.cs): Monolith#4804 made this true, which draws weather inside ships and buildings
+- [`Content.Shared/NightVision/SharedNightVisionSystem.cs`](../../Content.Shared/NightVision/SharedNightVisionSystem.cs): clear the wearer's overlay when a removal takes the component away
 - [`Content.Shared/Pinpointer/SharedNavMapSystem.cs`](../../Content.Shared/Pinpointer/SharedNavMapSystem.cs): compare region seeds by content; the reference compare dirtied every nav map each second
 - [`Content.Shared/Polymorph/Systems/SharedChameleonProjectorSystem.cs`](../../Content.Shared/Polymorph/Systems/SharedChameleonProjectorSystem.cs)
   - unanchoring left the mob a Dynamic body
@@ -452,8 +455,6 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
 - [`Resources/Prototypes/_DV/Catalog/Jukebox/Standard.yml`](../../Resources/Prototypes/_DV/Catalog/Jukebox/Standard.yml): licence does not cover this fork, track removed
 - [`Resources/Prototypes/_DV/Entities/Objects/Weapons/Guns/Projectiles/muzzleflashes.yml`](../../Resources/Prototypes/_DV/Entities/Objects/Weapons/Guns/Projectiles/muzzleflashes.yml): restore the licence header removed by Kill Spdx
 - [`Resources/Prototypes/_Goobstation/Entities/Clothing/Eyes/glasses.yml`](../../Resources/Prototypes/_Goobstation/Entities/Clothing/Eyes/glasses.yml): an invalid default leaves the chameleon menu empty
-- [`Resources/Prototypes/_Goobstation/Entities/Clothing/Head/modsuit.yml`](../../Resources/Prototypes/_Goobstation/Entities/Clothing/Head/modsuit.yml): unsealing strips only the seal's own components, not the ones this helmet always has
-- [`Resources/Prototypes/_Goobstation/Entities/Clothing/OuterClothing/modsuit.yml`](../../Resources/Prototypes/_Goobstation/Entities/Clothing/OuterClothing/modsuit.yml): the rsi has no sealed vox state, so sealed Vox drew an error sprite
 - [`Resources/Prototypes/_Goobstation/Entities/Objects/Devices/Circuitboards/machine.yml`](../../Resources/Prototypes/_Goobstation/Entities/Objects/Devices/Circuitboards/machine.yml)
   - restore the licence header removed by Kill Spdx
   - a machine part under stackRequirements can't be inserted; the frame reads parts from requirements
@@ -480,7 +481,6 @@ Standalone edits outside `_WF` that serve no module: files with an untagged `WOL
 - [`Resources/Prototypes/_Mono/Catalogs/tsfmc_uplink_catalog.yml`](../../Resources/Prototypes/_Mono/Catalogs/tsfmc_uplink_catalog.yml): TSF Balance Pass; from 175 -> 130
 - [`Resources/Prototypes/_Mono/Catalogs/VendingMachines/Inventories/ussp.yml`](../../Resources/Prototypes/_Mono/Catalogs/VendingMachines/Inventories/ussp.yml): the loaded magazine is class-3 contraband worth 10 FMC since Monolith#4816
 - [`Resources/Prototypes/_Mono/Claws/reptilian.yml`](../../Resources/Prototypes/_Mono/Claws/reptilian.yml): huge claws never stop a lizard shooting; they take the worst spread instead
-- [`Resources/Prototypes/_Mono/Entities/Clothing/OuterClothing/modsuit.yml`](../../Resources/Prototypes/_Mono/Entities/Clothing/OuterClothing/modsuit.yml): the rsi has no resomi state, so sealed Resomi drew an error sprite
 - [`Resources/Prototypes/_Mono/Entities/Mobs/NPCs/mothroaches.yml`](../../Resources/Prototypes/_Mono/Entities/Mobs/NPCs/mothroaches.yml): OwO accent removed
 - [`Resources/Prototypes/_Mono/Entities/Objects/Devices/Circuitboards/Machine/turrets.yml`](../../Resources/Prototypes/_Mono/Entities/Objects/Devices/Circuitboards/Machine/turrets.yml): restore the licence header removed by Kill Spdx
 - [`Resources/Prototypes/_Mono/Entities/Objects/Devices/flatpack.yml`](../../Resources/Prototypes/_Mono/Entities/Objects/Devices/flatpack.yml): restore the licence header removed by Kill Spdx
