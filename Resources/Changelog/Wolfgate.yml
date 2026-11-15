@@ -7675,3 +7675,16 @@ Entries:
   id: 100484
   time: '2026-11-15T19:37:46.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/678
+- author: Erol509
+  changes:
+    - type: Add
+      message: Added a modular modsuit system.
+    - type: Add
+      message: Added modsuit parts, cores, themes, and modules.
+    - type: Add
+      message: Added numerous new modsuit modules and their functionality.
+    - type: Add
+      message: Added modsuit management UI.
+  id: 100485
+  time: '2026-11-15T22:23:42.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/521
