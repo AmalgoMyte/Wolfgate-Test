@@ -7611,3 +7611,28 @@ Entries:
   id: 100479
   time: '2026-11-15T13:54:20.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/677
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: The ASF headset talks on the ASF channel by default. [950]
+    - type: Fix
+      message: Coil slugs no longer show an error sprite. [955]
+    - type: Fix
+      message: The IRE shielding crate no longer has the antimatter reactor name. [988]
+    - type: Fix
+      message: >-
+        The janitor voucher offers the Bucket and the mail voucher the Hermes.
+        [978]
+    - type: Fix
+      message: >-
+        Asking the ship seller for a second ship list no longer eats your ID
+        card. [976]
+    - type: Fix
+      message: Borgs see their crew's contracts in their PDA. [987]
+    - type: Fix
+      message: Using an encounter ship's deed registers the ship to you. [994]
+    - type: Add
+      message: Overseers can pick a chest rig or belt in their loadout. [960]
+  id: 100480
+  time: '2026-11-15T13:54:31.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/676
