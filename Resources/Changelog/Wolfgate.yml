@@ -7652,3 +7652,13 @@ Entries:
   id: 100482
   time: '2026-11-15T19:11:14.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/679
+- author: Happyowl93
+  changes:
+    - type: Tweak
+      message: >-
+        Mobile drydock cranes can be printed again after Shuttlecraft research,
+        so ships that come with a mobile drydock can add cranes. The console is
+        still only available on ships sold with one.
+  id: 100483
+  time: '2026-11-15T19:12:41.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/683
