@@ -7585,3 +7585,19 @@ Entries:
   id: 100477
   time: '2026-11-15T11:12:10.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/673
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        Faction nuclear devices can no longer be set to count down for less than
+        90 seconds.
+    - type: Add
+      message: Armed faction nuclear devices sound a klaxon that can be heard nearby.
+    - type: Add
+      message: >-
+        Faction nuclear devices have a maintenance panel with two wires. One cut
+        makes it safe, the other sets it off. A multitool no longer disarms
+        them.
+  id: 100478
+  time: '2026-11-15T11:47:28.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/672
