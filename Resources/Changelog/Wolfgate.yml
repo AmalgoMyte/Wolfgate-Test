@@ -7513,3 +7513,30 @@ Entries:
   id: 100472
   time: '2026-11-15T08:01:00.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/666
+- author: Happyowl93
+  changes:
+    - type: Tweak
+      message: Drugs sell for their purity, and illegal drugs are worth a lot more.
+    - type: Add
+      message: >-
+        Empathogen habit and Stoner traits. Synthetics can take habits and start
+        with a copied neuroware stick.
+    - type: Add
+      message: >-
+        A blank neuroware stick can read a drug into a program. Blanks print at
+        the autolathe.
+    - type: Tweak
+      message: Hash and Idle are legal.
+    - type: Fix
+      message: >-
+        Drug crashes no longer knock you down again and again. Redline collapses
+        you once.
+    - type: Tweak
+      message: >-
+        Withdrawal brings a steady ache that painkillers dull, and nodding off
+        is shorter and rarer.
+    - type: Tweak
+      message: Neuroware for synth should have more similar effects to organics now.
+  id: 100473
+  time: '2026-11-15T08:06:34.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/665
