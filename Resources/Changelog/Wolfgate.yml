@@ -7759,3 +7759,12 @@ Entries:
   id: 100490
   time: '2026-11-16T12:34:16.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/658
+- author: Happyowl93
+  changes:
+    - type: Fix
+      message: >-
+        Fixed the air alarm UI crashing when linked to vox atmos devices or
+        storage sensors.
+  id: 100491
+  time: '2026-11-16T12:34:42.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/693
