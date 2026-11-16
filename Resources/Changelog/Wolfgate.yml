@@ -7818,3 +7818,18 @@ Entries:
   id: 100495
   time: '2026-11-16T14:24:11.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/687
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        The ghost warp menu can be sorted by faction or by place, with players
+        and ships listed under the faction they fly for or the world they're on.
+    - type: Tweak
+      message: >-
+        The nuke and its disk only show in the ghost warp menu while something
+        is happening with them.
+    - type: Remove
+      message: Encounter ships are no longer listed in the ghost warp menu.
+  id: 100496
+  time: '2026-11-16T20:38:14.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/707
