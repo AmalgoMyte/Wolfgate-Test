@@ -7688,3 +7688,24 @@ Entries:
   id: 100485
   time: '2026-11-15T22:23:42.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/521
+- author: Gandalf2k15
+  changes:
+    - type: Fix
+      message: >-
+        Floating near a moving ship no longer drags you along or flings you off;
+        you keep the speed you left it with.
+    - type: Fix
+      message: >-
+        Encounter names on the mass scanner no longer jump between ships, and
+        stacked tags stay steady.
+    - type: Fix
+      message: >-
+        TSFMC Fireteam Leaders can use the FOB's bank console to pay marines
+        again.
+    - type: Fix
+      message: >-
+        Autocannon shells bursting on a hull wall no longer hurt the room behind
+        it.
+  id: 100486
+  time: '2026-11-16T09:00:56.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/685
