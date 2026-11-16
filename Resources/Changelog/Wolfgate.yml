@@ -7750,3 +7750,12 @@ Entries:
   id: 100489
   time: '2026-11-16T10:33:18.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/691
+- author: Erol509
+  changes:
+    - type: Add
+      message: >-
+        Added BSO clothing sprites, and loadout options for the drip. Resprited
+        departamental head cloaks/mantles
+  id: 100490
+  time: '2026-11-16T12:34:16.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/658
