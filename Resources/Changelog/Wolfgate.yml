@@ -7809,3 +7809,12 @@ Entries:
   id: 100494
   time: '2026-11-16T14:22:59.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/697
+- author: Happyowl93
+  changes:
+    - type: Tweak
+      message: >-
+        Ships from a faction voucher can no longer be broken at a drydock or
+        chop shop by their own faction.
+  id: 100495
+  time: '2026-11-16T14:24:11.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/687
