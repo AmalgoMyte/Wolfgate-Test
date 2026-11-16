@@ -7853,3 +7853,12 @@ Entries:
   id: 100498
   time: '2026-11-16T20:40:13.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/708
+- author: Balls2zawall
+  changes:
+    - type: Add
+      message: >-
+        Added the Despot, Ketch, Huolian, Jackal, Molly, Pibb, and Renegade to
+        the reavers ship roster.
+  id: 100499
+  time: '2026-11-16T20:42:03.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/709
