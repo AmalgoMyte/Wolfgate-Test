@@ -7726,3 +7726,16 @@ Entries:
   id: 100487
   time: '2026-11-16T09:55:26.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/675
+- author: ImogenOC
+  changes:
+    - type: Add
+      message: >-
+        Staff have Shipmaster, a panel to change a ship's owner and access,
+        repair it, move it and upgrade it.
+    - type: Tweak
+      message: >-
+        A ship's owner by registration can lock and unlock its helm without
+        holding a deed card.
+  id: 100488
+  time: '2026-11-16T09:55:53.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/670
