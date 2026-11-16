@@ -7833,3 +7833,12 @@ Entries:
   id: 100496
   time: '2026-11-16T20:38:14.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/707
+- author: Gandalf2k15
+  changes:
+    - type: Tweak
+      message: >-
+        Shields, drives and other fittings taken off NPC ships can now be bolted
+        down on your own ship.
+  id: 100497
+  time: '2026-11-16T20:40:00.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/703
