@@ -7709,3 +7709,20 @@ Entries:
   id: 100486
   time: '2026-11-16T09:00:56.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/685
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Caelestinus has its own R&D server, with a spare in the Overseer's
+        locker.
+    - type: Tweak
+      message: >-
+        The Firestarter and Jackdaw are reworked. The Jackdaw locks its magazine
+        and can't be stowed mid-burst, and drops if you let go during one.
+    - type: Tweak
+      message: Caelestinus suits are renamed and buffed, and come with HUDs.
+    - type: Tweak
+      message: Caelestinus loadouts are updated.
+  id: 100487
+  time: '2026-11-16T09:55:26.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/675
