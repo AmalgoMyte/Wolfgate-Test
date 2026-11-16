@@ -7793,3 +7793,10 @@ Entries:
   id: 100492
   time: '2026-11-16T13:20:25.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/686
+- author: Gandalf2k15
+  changes:
+    - type: Remove
+      message: Caelestinus Expansion I is rolled back for now.
+  id: 100493
+  time: '2026-11-16T13:30:03.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/695
