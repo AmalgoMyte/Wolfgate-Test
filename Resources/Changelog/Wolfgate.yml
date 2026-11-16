@@ -7800,3 +7800,12 @@ Entries:
   id: 100493
   time: '2026-11-16T13:30:03.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/695
+- author: Happyowl93
+  changes:
+    - type: Fix
+      message: >-
+        The SRD and drydocks now rebuild a destroyed mobile drydock crane bolted
+        down and bonded to its ship.
+  id: 100494
+  time: '2026-11-16T14:22:59.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/697
