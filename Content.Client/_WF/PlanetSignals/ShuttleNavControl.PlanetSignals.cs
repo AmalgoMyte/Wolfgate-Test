@@ -115,9 +115,16 @@ public partial class ShuttleNavControl
                 : Loc.GetString("wf-planet-signals-marker-vessel", ("name", WFPlanetSignalsWindow.NameOf(signal)),
                     ("layer", WFPlanetSignalsWindow.LayerOf(signal)));
             var labelSize = handle.GetDimensions(Font, label, UIScale * 0.8f);
-            WfBeginTag(point, point + new Vector2(size * 2f, -labelSize.Y / 2f), mine ? 2 : 0);
+            WfBeginTag(point, point + new Vector2(size * 2f, -labelSize.Y / 2f), mine ? 2 : 0, always: mine);
             WfTagLine(handle, label, UIScale * 0.8f, color);
         }
+    }
+
+    /// <summary>Lets a world pinned to the scope's rim, which has no tag, be clicked by its blip alone.</summary>
+    private void WfAddPlanetBlipHit(EntityUid body, Vector2 uiPosition)
+    {
+        if (EntManager.HasComponent<WFPlanetSignalsComponent>(body))
+            _wfPlanetHits.Add((body, uiPosition * UIScale, 16f * UIScale, default));
     }
 
     /// <summary>
