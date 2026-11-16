@@ -7768,3 +7768,28 @@ Entries:
   id: 100491
   time: '2026-11-16T12:34:42.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/693
+- author: Happyowl93
+  changes:
+    - type: Add
+      message: >-
+        NPC crew now cover the approaches when you break line of sight, and fire
+        sooner when you reappear.
+    - type: Add
+      message: >-
+        Reaver riflemen carry grenades and throw them round corners, shouting a
+        warning first.
+    - type: Add
+      message: >-
+        Veteran and better crew sidestep while shooting, fall back to patch up
+        when badly hurt, and hunt in pairs.
+    - type: Tweak
+      message: >-
+        Reaver crewmen vary in skill: deckhands are weaker and officers sharper
+        than the rest of their crew.
+    - type: Fix
+      message: >-
+        NPC riflemen no longer drop and re-grab their spare magazine forever
+        instead of reloading.
+  id: 100492
+  time: '2026-11-16T13:20:25.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/686
