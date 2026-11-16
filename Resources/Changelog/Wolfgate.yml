@@ -7842,3 +7842,14 @@ Entries:
   id: 100497
   time: '2026-11-16T20:40:00.0000000+00:00'
   url: https://github.com/VanguardControl/Wolfgate/pull/703
+- author: Gandalf2k15
+  changes:
+    - type: Add
+      message: >-
+        Radar option to show only contact icons, with names hidden until you
+        hover over a contact.
+    - type: Add
+      message: Radar option to turn off revealing names by hovering.
+  id: 100498
+  time: '2026-11-16T20:40:13.0000000+00:00'
+  url: https://github.com/VanguardControl/Wolfgate/pull/708
